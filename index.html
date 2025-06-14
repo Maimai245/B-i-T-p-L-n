@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DREAM EYES - Mắt sáng Mặt sang</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<script src="jquery-3.7.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="ảnh/LOGO.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">DREAM EYES</a>
+
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#home">Trang Chủ</a></li>
+            
+            <li class="has-submenu">
+                <a href="#products">Sản Phẩm</a>
+                <ul class="submenu">
+                    <li><a href="#new-products">Sản Phẩm Mới</a></li>
+                    <li><a href="#best-sellers">Bán Chạy Nhất</a></li>
+                    <li><a href="#on-sale">Khuyến Mại</a></li>
+                    <li><a href="#featured">Nổi Bật</a></li>
+                </ul>
+            </li>
+            
+            <li class="has-submenu">
+                <a href="#categories">Danh Mục</a>
+                <ul class="submenu">
+                    <li><a href="#electronics">Điện Tử</a></li>
+                    <li><a href="#fashion">Thời Trang</a></li>
+                    <li><a href="#home-garden">Nhà Cửa & Vườn</a></li>
+                    <li><a href="#sports">Thể Thao</a></li>
+                    <li><a href="#books">Sách & Văn Phòng Phẩm</a></li>
+                </ul>
+            </li>
+            
+            <li class="has-submenu">
+                <a href="#about">Về Chúng Tôi</a>
+                <ul class="submenu">
+                    <li><a href="#company">Giới Thiệu Công Ty</a></li>
+                    <li><a href="#team">Đội Ngũ</a></li>
+                    <li><a href="#history">Lịch Sử</a></li>
+                    <li><a href="#careers">Tuyển Dụng</a></li>
+                </ul>
+            </li>
+            
+            <li class="has-submenu">
+                <a href="#contact">Liên Hệ</a>
+                <ul class="submenu">
+                    <li><a href="#contact-info">Thông Tin Liên Hệ</a></li>
+                    <li><a href="#support">Hỗ Trợ Khách Hàng</a></li>
+                    <li><a href="#feedback">Góp Ý</a></li>
+                    <li><a href="#locations">Chi Nhánh</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+            <div class="nav-actions">
+                <span class="nav-icon">
+				<a href="#">
+                    <i class="fa fa-heart"></i>
+                    Yêu Thích
+                </a></span>
+                <div style="position: relative;">
+                    <span class="nav-icon">
+					<a href="dangnhap.html">
+                    <i class="fa fa-user"></i>
+                    Tài khoản
+                </a></span>
+                </div>
+                <span class="nav-icon">
+                <a href="giohang.html">
+                    <i class="fa fa-cart-shopping"></i>
+                    Giỏ Hàng
+				</a></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+   <!-- Featured Recipes Slideshow -->
+    <section class="featured-section">
+        <div class="slideshow-container">
+            <!-- Slide 1 -->
+            <div class="featured-slide">
+                <div class="featured-recipe">
+                    <img src="ảnh/anhbia3.png" alt="">
+                    <div class="featured-content">
+                        <h3>Bộ Sưu Tập Mới</h3>
+                        <h1>Vẻ Đẹp Vĩnh Cửu</h1>
+						<p>Khám phá bộ sưu tập trang sức cao cấp được chế tác tinh xảo, mang đến cho bạn vẻ đẹp lộng lẫy và đẳng cấp</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Slide 2 -->
+            <div class="featured-slide">
+                <div class="featured-recipe">
+                    <img src="ảnh/anhbia2.jpg" alt="">
+                    <div class="featured-content">
+                        <h3>Kim Cương Cao Cấp</h3>
+                        <h1>Tỏa Sáng Rực Rỡ</h1>
+						<p>Mỗi viên kim cương đều được tuyển chọn kỹ lưỡng, mang đến ánh sáng rực rỡ và giá trị bền vững cho bạn</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="featured-slide">
+                <div class="featured-recipe">
+                    <img src="ảnh/anhbia3.jpg" alt="">
+                    <div class="featured-content">
+                        <h3>Thiết Kế Độc Quyền</h3>
+                         <h1>Phong Cách Riêng</h1>
+						<p>Tạo nên dấu ấn cá nhân với những thiết kế độc đáo, được chế tác riêng theo phong cách và sở thích của bạn</p>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <!-- Dots -->
+        <div class="slide-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+    
+
+    <!-- Featured Products -->
+        <section class="featured" id="products">
+        <h2 class="section-title fade-in">Sản Phẩm Nổi Bật</h2>
+        <div class="products-grid">
+            <div class="product-card fade-in">
+                <div class="product-image">
+                   
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">
+                        <span class="heart">🤍</span>
+                    </button>
+					<img src="Ảnh Kính\Kính Loewe\l1.jpg">
+                </div>
+				
+                <div class="product-info">
+                    <h3 class="product-name">Square Screen sunglasses</h3>
+                    <p class="product-price">13.000.000₫</p>
+                    <p class="product-description">Kính mát vuông thời thượng, mang đến phong cách trẻ trung và năng động.</p>
+                    <button class="add-to-cart-btn">
+                        <span class="cart-icon"><i class="fa fa-cart-shopping"></i></span>
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card fade-in">
+                <div class="product-image">
+                   
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">
+                        <span class="heart">🤍</span>
+                    </button>
+					<img src="Ảnh Kính\Kính LV\lv2.jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name"><a href="chitietsp.html">Mắt Kính 1.1 Millionaires</a></h3>
+                    <p class="product-price">23.700.000₫</p>
+                    <p class="product-description">Mắt Kính 1.1 Millionaires cao cấp, mang đến vẻ đẹp quý phái và thanh lịch.</p>
+                    <button class="add-to-cart-btn" >
+                        <span class="cart-icon"><i class="fa fa-cart-shopping"></i></span>
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card fade-in">
+                <div class="product-image">
+                
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">
+                        <span class="heart">🤍</span>
+                    </button>
+					
+					<img src="Ảnh Kính\Kính LV\lv6-.jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Bông Tai Vàng Hồng</h3>
+                    <p class="product-price">12.800.000₫</p>
+                    <p class="product-description">Bông tai vàng hồng 18K với thiết kế hiện đại, tôn lên vẻ đẹp tự nhiên của phái đẹp.</p>
+                    <button class="add-to-cart-btn">
+                        <span class="cart-icon"><i class="fa fa-cart-shopping"></i></span>
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card fade-in">
+                <div class="product-image">
+                    
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">
+                        <span class="heart">🤍</i></span>
+                    </button>
+					<img src="Ảnh Kính\Kính LV\l11.jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Mắt Kính Dáng Vuông 1.1 Millionaires</h3>
+                    <p class="product-price">23.300.000₫</p>
+                    <p class="product-description">Mắt kính cao cấp, kết hợp hoàn hảo giữa chức năng và vẻ đẹp.</p>
+                    <button class="add-to-cart-btn" >
+                        <span class="cart-icon"><i class="fa fa-cart-shopping"></i></span>
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card fade-in heddin">
+                <div class="product-image">
+                    
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">
+                        <span class="heart">🤍</span>
+                    </button>
+					<img src="Ảnh Kính\Kính Dior\di8.jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">DiorOblique S1F</h3>
+                    <p class="product-price">14.500.000₫</p>
+                    <p class="product-description">Kính mát DiorOblique S1F thể hiện logo Dior Oblique đặc trưng bằng kim loại hoàn thiện màu bạc.</p>
+                    <button class="add-to-cart-btn">
+                        <span class="cart-icon"><i class="fa fa-cart-shopping"></i></span>
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card fade-in">
+                <div class="product-image">
+                    
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">
+                        <span class="heart">🤍</span>
+                    </button>
+					<img src="Ảnh Kính\Kính Dior\di9.png">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">CD Diamond S3F</h3>
+                    <p class="product-price">17.660.000₫</p>
+                    <p class="product-description">Kính mát CD Diamond S3F với tròng kính tráng gương tông vàng làm nổi bật đường nét với hình vuông trong thiết kế đương đại</p>
+                    <button class="add-to-cart-btn" >
+                        <span class="cart-icon"><i class="fa fa-cart-shopping"></i></span>
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card fade-in">
+                <div class="product-image">
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">
+                        <span class="heart">🤍</span>
+                    </button>
+                    <img src="Ảnh Kính\Kính Gucci\gucci1.jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">CD Diamond S3F</h3>
+                    <p class="product-price">17.660.000₫</p>
+                    <p class="product-description">Kính mát CD Diamond S3F với tròng kính tráng gương tông vàng làm nổi bật đường nét với hình vuông trong thiết kế đương đại</p>
+                    <button class="add-to-cart-btn" >
+                        <span class="cart-icon"><i class="fa fa-cart-shopping"></i></span>
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <button id="load-more" class="loadMoreBtn ">Xem Thêm</button>
+    </section>
+
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="categories-container">
+            <h2 class="section-title fade-in">Danh Mục Sản Phẩm</h2>
+            <div class="categories-grid">
+                <div class="category-card fade-in">
+         
+                    <h3 class="category-name">Kính Mát</h3>
+                </div>
+                <div class="category-card fade-in">
+                    
+                    <h3 class="category-name">Gọng Kính</h3>
+                </div>
+                <div class="category-card fade-in">
+
+                    <h3 class="category-name">Kính Dior</h3>
+                </div>
+                <div class="category-card fade-in">
+
+                    <h3 class="category-name">Kính Gucci</h3>
+                </div>
+                <div class="category-card fade-in">
+                    
+                    <h3 class="category-name">Kính Louis Vuitton's</h3>
+                </div>
+                <div class="category-card fade-in">
+
+                    <h3 class="category-name">Kính Loewe</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <h2 class="section-title fade-in">Về DREAM EYES</h2>
+            <p class="about-text fade-in">
+                DREAM EYES là thương hiệu trang sức cao cấp hàng đầu với hơn 20 năm kinh nghiệm trong ngành. 
+                Chúng tôi cam kết mang đến những sản phẩm trang sức tinh xảo nhất, được chế tác bởi những nghệ nhân 
+                tài ba với tình yêu và sự tận tâm. Mỗi món trang sức LUMINA không chỉ là một sản phẩm, mà còn là 
+                câu chuyện về vẻ đẹp, tình yêu và những khoảnh khắc đáng nhớ trong cuộc đời bạn.
+            </p>
+            <p class="about-text fade-in">
+                Với tiêu chí "Vẻ đẹp vĩnh cửu", chúng tôi luôn sử dụng những chất liệu cao cấp nhất như vàng 18K, 
+                kim cương thiên nhiên, ngọc trai Akoya và các loại đá quý quý hiếm. Mỗi sản phẩm đều được kiểm định 
+                chất lượng nghiêm ngặt và đi kèm chứng nhận quốc tế.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>DREAM EYES</h3>
+                <p>Thương hiệu trang sức cao cấp hàng đầu Việt Nam, mang đến vẻ đẹp vĩnh cửu cho bạn.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên Hệ</h3>
+                <p>📍 123 Đường Nguyễn Du, Quận 1, TP.HCM</p>
+                <p>📞 0123 456 789</p>
+                <p>✉️ info@lumina.vn</p>
+            </div>
+            <div class="footer-section">
+                <h3>Dịch Vụ</h3>
+                <p><a href="#">Tư vấn trang sức</a></p>
+                <p><a href="#">Chế tác theo yêu cầu</a></p>
+                <p><a href="#">Bảo hành trọn đời</a></p>
+                <p><a href="#">Vệ sinh & bảo dưỡng</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Theo Dõi Chúng Tôi</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DREAM EYES. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+        // Slideshow món ăn nổi bật
+        let slideIndex = 0;
+        
+        function showSlides() {
+            const slides = document.querySelectorAll('.featured-slide');
+            const dots = document.querySelectorAll('.dot');
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+            
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active');
+            }
+            
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            
+            slides[slideIndex - 1].classList.add('active');
+            dots[slideIndex - 1].classList.add('active');
+            
+            setTimeout(showSlides, 5000);
+        }
+        
+        // Initialize slideshow
+        document.addEventListener('DOMContentLoaded', function() {
+            showSlides();
+            
+            // Manual navigation
+            const dots = document.querySelectorAll('.dot');
+            
+            
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', function() {
+                    currentSlide(index + 1);
+                });
+            });
+        });
+        
+        function navigateSlides(n) {
+            const slides = document.querySelectorAll('.featured-slide');
+            const dots = document.querySelectorAll('.dot');
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+            
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active');
+            }
+            
+            slideIndex += n;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            if (slideIndex < 1) { slideIndex = slides.length }
+            
+            slides[slideIndex - 1].classList.add('active');
+            dots[slideIndex - 1].classList.add('active');
+        }
+        
+        function currentSlide(n) {
+            const slides = document.querySelectorAll('.featured-slide');
+            const dots = document.querySelectorAll('.dot');
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+            
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active');
+            }
+            
+            slideIndex = n;
+            slides[slideIndex - 1].classList.add('active');
+            dots[slideIndex - 1].classList.add('active');
+        }
+		        // Chức năng yêu thích
+        function toggleFavorite(button) {
+            const heart = button.querySelector('.heart');
+            if (button.classList.contains('active')) {
+                button.classList.remove('active');
+                heart.textContent = '🤍';
+            } else {
+                button.classList.add('active');
+                heart.textContent = '❤️';
+            }
+        }
+document.addEventListener('DOMContentLoaded', function() {
+    // Khởi tạo giỏ hàng từ localStorage, nếu không có thì tạo mảng rỗng
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+    // Thêm sự kiện click cho tất cả nút "Thêm vào giỏ hàng"
+    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+        button.addEventListener('click', addToCart);
+    });
+
+    // Hàm xử lý thêm sản phẩm vào giỏ hàng
+    function addToCart(event) {
+        const button = event.target.closest('.add-to-cart-btn'); // Lấy nút được nhấn
+        const productCard = button.closest('.product-card'); // Lấy thẻ sản phẩm chứa nút
+        
+        // Lấy thông tin sản phẩm
+        const product = {
+            id: Date.now(), // Tạo ID duy nhất dựa trên thời gian
+            name: productCard.querySelector('.product-name').textContent, // Tên sản phẩm
+            price: parseFloat(productCard.querySelector('.product-price').textContent.replace('₫', '').replace(/\./g, '')), // Giá sản phẩm
+            image: productCard.querySelector('.product-image img').src, // Đường dẫn hình ảnh
+            quantity: 1 // Số lượng mặc định là 1
+        };
+
+        // Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
+        const existingItem = cart.find(item => item.name === product.name);
+        if (existingItem) {
+            existingItem.quantity += 1; // Tăng số lượng nếu sản phẩm đã tồn tại
+        } else {
+            cart.push(product); // Thêm sản phẩm mới vào giỏ hàng
+        }
+
+        // Lưu giỏ hàng vào localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        // Hiển thị thông báo khi thêm sản phẩm
+        showCartNotification(product.name);
+        
+        // Cập nhật số lượng sản phẩm trong giỏ hàng ở thanh điều hướng
+        updateCartCount();
+    }
+
+    // Hàm hiển thị thông báo khi thêm sản phẩm vào giỏ hàng
+    function showCartNotification(productName) {
+        const notification = document.createElement('div'); // Tạo phần tử thông báo
+        notification.className = 'cart-notification';
+        notification.innerHTML = `
+            <p>Đã thêm "${productName}" vào giỏ hàng!</p>
+            <a href="giohang.html">Xem giỏ hàng</a>
+        `;
+        
+        document.body.appendChild(notification); // Thêm thông báo vào trang
+        
+        // Định dạng giao diện thông báo
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #5D4037;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        `;
+        
+        // Định dạng liên kết "Xem giỏ hàng"
+        const link = notification.querySelector('a');
+        link.style.cssText = `
+            color: white;
+            text-decoration: underline;
+            cursor: pointer;
+        `;
+        
+        // Tự động ẩn thông báo sau 3 giây
+        setTimeout(() => {
+            notification.style.transition = 'opacity 0.5s';
+            notification.style.opacity = '0';
+            setTimeout(() => notification.remove(), 500);
+        }, 3000);
+    }
+
+    // Hàm cập nhật số lượng sản phẩm hiển thị ở biểu tượng giỏ hàng
+    function updateCartCount() {
+        const cartIcon = document.querySelector('.nav-icon a[href="giohang.html"]'); // Lấy biểu tượng giỏ hàng
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0); // Tính tổng số lượng sản phẩm
+        
+        // Tạo hoặc cập nhật huy hiệu số lượng
+        let badge = cartIcon.querySelector('.cart-badge');
+        if (!badge) {
+            badge = document.createElement('span');
+            badge.className = 'cart-badge';
+            badge.style.cssText = `
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                background: #ff4444;
+                color: white;
+                border-radius: 50%;
+                padding: 2px 6px;
+                font-size: 12px;
+            `;
+            cartIcon.appendChild(badge);
+        }
+        badge.textContent = totalItems; // Hiển thị số lượng
+    }
+
+    // Cập nhật số lượng giỏ hàng khi tải trang
+    updateCartCount();
+});
+	</script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FHYLIZZ - Giỏ Hàng</title>
+	<link rel="stylesheet" type="text/css" href="giohang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">FHYLIZZ</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html#home">Trang Chủ</a></li>
+                    <li class="has-submenu">
+                        <a href="index.html#products">Sản Phẩm</a>
+                        <ul class="submenu">
+                            <li><a href="index.html#new-products">Sản Phẩm Mới</a></li>
+                            <li><a href="index.html#best-sellers">Bán Chạy Nhất</a></li>
+                            <li><a href="index.html#on-sale">Khuyến Mại</a></li>
+                            <li><a href="index.html#featured">Nổi Bật</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="index.html#categories">Danh Mục</a>
+                        <ul class="submenu">
+                            <li><a href="index.html#electronics">Điện Tử</a></li>
+                            <li><a href="index.html#fashion">Thời Trang</a></li>
+                            <li><a href="index.html#home-garden">Nhà Cửa & Vườn</a></li>
+                            <li><a href="index.html#sports">Thể Thao</a></li>
+                            <li><a href="index.html#books">Sách & Văn Phòng Phẩm</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="index.html#about">Về Chúng Tôi</a>
+                        <ul class="submenu">
+                            <li><a href="index.html#company">Giới Thiệu Công Ty</a></li>
+                            <li><a href="index.html#team">Đội Ngũ</a></li>
+                            <li><a href="index.html#history">Lịch Sử</a></li>
+                            <li><a href="index.html#careers">Tuyển Dụng</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="index.html#contact">Liên Hệ</a>
+                        <ul class="submenu">
+                            <li><a href="index.html#contact-info">Thông Tin Liên Hệ</a></li>
+                            <li><a href="index.html#support">Hỗ Trợ Khách Hàng</a></li>
+                            <li><a href="index.html#feedback">Góp Ý</a></li>
+                            <li><a href="index.html#locations">Chi Nhánh</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <span class="nav-icon">
+                    <a href="#">
+                        <i class="fa fa-heart"></i>
+                        Yêu Thích
+                    </a>
+                </span>
+                <span class="nav-icon">
+                    <a href="login.html">
+                        <i class="fa fa-user"></i>
+                        Tài khoản
+                    </a>
+                </span>
+                <span class="nav-icon">
+                    <a href="giohang.html">
+                        <i class="fa fa-cart-shopping"></i>
+                        Giỏ Hàng
+                        <span class="cart-count" id="cart-count">0</span>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <h2 class="section-title">Giỏ Hàng Của Bạn</h2>
+        <div class="cart-items" id="cart-items">
+            <div class="cart-empty">Giỏ hàng của bạn hiện đang trống.</div>
+        </div>
+        <div class="cart-summary" id="cart-summary" style="display: none;">
+            <p class="cart-total" id="cart-total">Tổng: 0₫</p>
+            <button class="checkout-btn">Tiến Hành Thanh Toán</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>FHYLIZZ</h3>
+                <p>Thương hiệu trang sức cao cấp hàng đầu Việt Nam, mang đến vẻ đẹp vĩnh cửu cho bạn.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên Hệ</h3>
+                <p>📍 123 Đường Nguyễn Du, Quận 1, TP.HCM</p>
+                <p>📞 0123 456 789</p>
+                <p>✉️ info@lumina.vn</p>
+            </div>
+            <div class="footer-section">
+                <h3>Dịch Vụ</h3>
+                <p><a href="#">Tư vấn trang sức</a></p>
+                <p><a href="#">Chế tác theo yêu cầu</a></p>
+                <p><a href="#">Bảo hành trọn đời</a></p>
+                <p><a href="#">Vệ sinh & bảo dưỡng</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Theo Dõi Chúng Tôi</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 FHYLIZZ. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script>
+// Sự kiện được kích hoạt khi trang được tải hoàn toàn
+document.addEventListener('DOMContentLoaded', function() {
+    // Hàm hiển thị giỏ hàng từ localStorage
+    function loadCart() {
+        // Lấy giỏ hàng từ localStorage, nếu không có thì trả về mảng rỗng
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartItemsContainer = document.getElementById('cart-items'); // Vùng hiển thị sản phẩm
+        const cartSummary = document.getElementById('cart-summary'); // Phần tóm tắt giỏ hàng
+        const cartTotal = document.getElementById('cart-total'); // Phần hiển thị tổng tiền
+        const cartCount = document.getElementById('cart-count'); // Số lượng sản phẩm trên biểu tượng giỏ hàng
+
+        // Xóa nội dung cũ trong vùng hiển thị sản phẩm
+        if (cartItemsContainer) {
+            cartItemsContainer.innerHTML = '';
+        }
+
+        let total = 0; // Tổng giá trị giỏ hàng
+        let itemCount = 0; // Tổng số lượng sản phẩm
+
+        // Kiểm tra nếu giỏ hàng trống
+        if (cart.length === 0) {
+            if (cartItemsContainer) {
+                cartItemsContainer.innerHTML = '<div class="cart-empty">Giỏ hàng của bạn hiện đang trống.</div>';
+            }
+            if (cartSummary) {
+                cartSummary.style.display = 'none';
+            }
+            if (cartCount) {
+                cartCount.textContent = '0';
+            }
+            return;
+        }
+
+        // Duyệt qua từng sản phẩm trong giỏ hàng
+        cart.forEach((item, index) => {
+            const itemTotal = item.price * item.quantity; // Tính tổng giá trị của sản phẩm
+            total += itemTotal; // Cộng vào tổng giá trị giỏ hàng
+            itemCount += item.quantity; // Cộng số lượng sản phẩm
+
+            // Tạo phần tử HTML cho mỗi sản phẩm trong giỏ hàng
+            if (cartItemsContainer) {
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item';
+                cartItem.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}">
+                    <div class="cart-item-info">
+                        <h3 class="cart-item-name">${item.name}</h3>
+                        <p class="cart-item-price">${item.price.toLocaleString('vi-VN')}₫</p>
+                        <div class="cart-item-quantity">
+                            <button class="quantity-btn" onclick="updateQuantity(${index}, -1)">-</button>
+                            <span>${item.quantity}</span>
+                            <button class="quantity-btn" onclick="updateQuantity(${index}, 1)">+</button>
+                            <button class="remove-btn" onclick="removeItem(${index})"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+                `;
+                cartItemsContainer.appendChild(cartItem);
+            }
+        });
+
+        // Cập nhật tổng giá trị và số lượng trên giao diện
+        if (cartTotal) {
+            cartTotal.textContent = `Tổng: ${total.toLocaleString('vi-VN')}₫`;
+        }
+        if (cartCount) {
+            cartCount.textContent = itemCount;
+        }
+        if (cartSummary) {
+            cartSummary.style.display = 'block';
+        }
+    }
+
+    // Hàm cập nhật số lượng sản phẩm
+    window.updateQuantity = function(index, change) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || []; // Lấy giỏ hàng
+        cart[index].quantity += change; // Thay đổi số lượng
+        if (cart[index].quantity <= 0) {
+            cart.splice(index, 1); // Xóa sản phẩm nếu số lượng <= 0
+        }
+        localStorage.setItem('cart', JSON.stringify(cart)); // Lưu lại giỏ hàng
+        loadCart(); // Cập nhật giao diện
+    };
+
+    // Hàm xóa sản phẩm khỏi giỏ hàng
+    window.removeItem = function(index) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || []; // Lấy giỏ hàng
+        cart.splice(index, 1); // Xóa sản phẩm tại vị trí index
+        localStorage.setItem('cart', JSON.stringify(cart)); // Lưu lại giỏ hàng
+        loadCart(); // Cập nhật giao diện
+    };
+
+    // Hàm thêm sản phẩm vào giỏ hàng
+    function addToCart(event) {
+        const productCard = event.target.closest('.product-card'); // Lấy thẻ sản phẩm
+        if (!productCard) return;
+
+        // Lấy thông tin sản phẩm
+        const name = productCard.querySelector('.product-name')?.textContent.trim() || '';
+        const image = productCard.querySelector('img')?.getAttribute('src') || '';
+        const priceText = productCard.querySelector('.product-price')?.textContent.trim().replace('₫', '').replace(/\./g, '');
+        const price = parseInt(priceText) || 0;
+
+        // Tạo đối tượng sản phẩm
+        const product = {
+            id: Date.now(), // ID duy nhất dựa trên thời gian
+            name: name,
+            image: image,
+            price: price,
+            quantity: 1
+        };
+
+        // Lấy giỏ hàng từ localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const index = cart.findIndex(p => p.name === product.name); // Kiểm tra sản phẩm đã có trong giỏ chưa
+        if (index !== -1) {
+            cart[index].quantity += 1; // Tăng số lượng nếu đã có
+        } else {
+            cart.push(product); // Thêm sản phẩm mới
+        }
+
+        // Lưu giỏ hàng và hiển thị thông báo
+        localStorage.setItem('cart', JSON.stringify(cart));
+        loadCart();
+        showCartNotification(product.name);
+    }
+
+    // Hàm hiển thị thông báo khi thêm sản phẩm
+    function showCartNotification(productName) {
+        const notification = document.createElement('div'); // Tạo phần tử thông báo
+        notification.className = 'cart-notification';
+        notification.innerHTML = `
+            <p>Đã thêm "${productName}" vào giỏ hàng!</p>
+            <a href="giohang.html">Xem giỏ hàng</a>
+        `;
+        document.body.appendChild(notification); // Thêm thông báo vào trang
+
+        // Định dạng giao diện thông báo
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        `;
+
+        // Định dạng liên kết "Xem giỏ hàng"
+        const link = notification.querySelector('a');
+        link.style.cssText = `
+            color: white;
+            text-decoration: underline;
+            cursor: pointer;
+        `;
+
+        // Tự động ẩn thông báo sau 3 giây
+        setTimeout(() => {
+            notification.style.transition = 'opacity 0.5s';
+            notification.style.opacity = '0';
+            setTimeout(() => notification.remove(), 500);
+        }, 3000);
+    }
+
+    // Thêm sự kiện cho các nút "Thêm vào giỏ hàng"
+    const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', addToCart);
+    });
+
+    // Hiển thị giỏ hàng khi tải trang
+    loadCart();
+
+    // Smooth scrolling cho các liên kết điều hướng
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Hiệu ứng cuộn cho header
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('.header');
+        if (window.scrollY > 100) {
+            header.style.background = 'rgba(255, 255, 255, 0.98)';
+            header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+        } else {
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+            header.style.boxShadow = 'none';
+        }
+    });
+});
+    </script>
+</body>
+</html>
